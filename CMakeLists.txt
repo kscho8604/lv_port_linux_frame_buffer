@@ -12,6 +12,6 @@ target_include_directories(lvgl PUBLIC ${PROJECT_SOURCE_DIR})
 
 add_executable(main main.c test.c mouse_cursor_icon.c)
 
-target_link_libraries(main lvgl lvgl::examples lvgl::demos lvgl::thorvg ${SDL2_LIBRARIES} m pthread mariadb)
+target_link_libraries(main  lvgl lvgl::examples lvgl::demos lvgl::thorvg ${SDL2_LIBRARIES} m pthread mariadb)
 add_custom_target (run COMMAND ${EXECUTABLE_OUTPUT_PATH}/main DEPENDS main)
 
